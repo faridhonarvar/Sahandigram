@@ -1,0 +1,57 @@
+.sahandigram-like, .sahandigram-save, .sahandigram-comments {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #262626;
+}
+
+.sahandigram-like i.liked, .sahandigram-save i.saved {
+    color: #ed4956;
+}
+
+.sahandigram-like .like-count, .sahandigram-comments .comments-count {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.sahandigram-share {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #262626;
+}
+.sahandigram-share .share-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+}
+.sahandigram-share .share-options a {
+    margin: 0 5px;
+    color: #262626;
+    font-size: 18px;
+}
+.sahandigram-share .share-options a:hover {
+    color: #ed4956;
+}
+
+.sahandigram-like i {
+    transition: transform 0.3s ease;
+}
+.sahandigram-like i.liked {
+    animation: heartBeat 0.5s ease;
+}
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
